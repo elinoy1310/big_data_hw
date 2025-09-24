@@ -1,0 +1,41 @@
+-------------------- BEGIN model.txt --------------------
+# Team: big team
+# Date: 15.9.2025
+# Database name   books2.db
+5) link to model.rdata None
+
+6.a) RMSE of the full model UB 2.021467, IB 2.034467
+6.b) histogram of RMSE <table(bin, num occurrences UBCF, num occurrences IBCF)>
+RMSE
+      N.UBCF   N.IBCF
+0.00  4017     8217   
+0.25  2485     7088   
+0.50  4920     7716   
+0.75  2837     7263   
+1.00  4975     9669   
+1.25  3427     9792   
+1.50  4322     10148  
+1.75  2894     10062  
+2.00  4079     11489  
+2.25  3464     11411  
+2.50  4838     12075  
+2.75  3621     12486  
+3.00  5184     13034  
+3.25  5196     12525  
+3.50  6457     12490  
+3.75  5553     11101  
+4.00  7191     10566  
+4.25  5076     8618   
+4.50  5281     8076   
+4.75  3403     6638   
+5.00  3580     5817   
+6.c) Top-10 recommendations   <table(user,book1,book2,book3, ..., book10)>
+UBCF
+user
+<We couldn't get it into the file it gave errors no matter what we tried
+Although we were able to calculate it into a variable but not store it in memory>
+IBCF
+user
+<We couldn't get it into the file it gave errors no matter what we tried
+Although we were able to calculate it into a variable but not store it in memory>
+-------------------- END model.txt --------------------
