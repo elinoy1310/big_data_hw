@@ -2,7 +2,7 @@
 # Team: big team
 # Date: 15.9.2025
 # Database name   books2.db
-5) link to model.rdata None
+5) link to model.rdata https://drive.google.com/file/d/1LdOfN0Mq-YfcxSk06IyMt3E1WGb9En8P/view?usp=sharing
 
 6.a) RMSE of the full model UB 2.021467, IB 2.034467
 6.b) histogram of RMSE <table(bin, num occurrences UBCF, num occurrences IBCF)>
