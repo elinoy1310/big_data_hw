@@ -1,0 +1,29 @@
+[2025-10-29 10:05:14] ===== BEGIN RECOMMENDER SYSTEM RUN =====
+[2025-10-29 10:05:19] Spark session initialized.
+[2025-10-29 10:05:19] Loading ratings parquet file...
+[2025-10-29 10:05:24] Ratings file loaded successfully.
+[2025-10-29 10:05:24] Calculating sparsity and dataset structure...
+[2025-10-29 10:05:30] Users: 64616, Items: 137273, Ratings: 350490
+[2025-10-29 10:05:30] Matrix sparsity: 0.999960
+[2025-10-29 10:05:30] --- Starting stage: Build Items Lookup ---
+[2025-10-29 10:05:30] Building items lookup table...
+[2025-10-29 10:05:30] Opening BX_Book.csv...
+[2025-10-29 10:05:35] BX_Book.csv loaded successfully. Columns: ['ISBN', 'Book_Title', 'Book_Author', 'Year_Of_Publication', 'Publisher', 'Image_URL_S', 'Image_URL_M', 'Image_URL_L']
+[2025-10-29 10:05:35] Book titles successfully linked to lookup table.
+[2025-10-29 10:05:35] --- Finished stage: Build Items Lookup in 0.08 minutes ---
+[2025-10-29 10:05:35] Loading UBCF model from big_data_recommendation_system\recommendation_model\artifacts_model\ALS_model_fold_2...
+[2025-10-29 10:05:36] UBCF model loaded.
+[2025-10-29 10:05:36] Loading IBCF model from big_data_recommendation_system\recommendation_model\artifacts_model\ALS_model_fold_4...
+[2025-10-29 10:05:37] IBCF model loaded.
+[2025-10-29 10:05:37] --- Starting stage: UBCF Recommendations ---
+[2025-10-29 10:05:37] Generating UBCF recommendations for 250 users...
+[2025-10-29 10:05:41] ALS model produced raw recommendations (UBCF).
+[2025-10-29 11:08:57] Finished generating UBCF recommendations for 250 users.
+[2025-10-29 11:08:57] --- Finished stage: UBCF Recommendations in 63.34 minutes ---
+[2025-10-29 11:08:57] --- Starting stage: IBCF Recommendations ---
+[2025-10-29 11:08:57] Generating IBCF recommendations for 250 users...
+[2025-10-29 11:08:58] ALS model produced raw recommendations (IBCF).
+[2025-10-29 12:02:30] Finished generating IBCF recommendations for 250 users.
+[2025-10-29 12:02:30] --- Finished stage: IBCF Recommendations in 53.56 minutes ---
+[2025-10-29 12:02:30] Total run time: 117.28 minutes.
+[2025-10-29 12:02:30] ===== END RECOMMENDER SYSTEM RUN =====
